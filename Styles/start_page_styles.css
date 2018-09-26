@@ -1,0 +1,27 @@
+
+.main-heading {
+	font-family: 'Lobster', sans-serif;
+	font-size: 8px;
+	margin-bottom: 30px;
+}
+
+.body-title {
+	font-family: 'Lobster', monospace;
+	color: gray;
+}
+
+.body-text {
+	color: #C0C0C0;
+}
+
+body {
+	margin: 50px;
+	background-image: url(http://localhost/BlogForLife/styles/background_image.jpeg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: silver;	
+}
+div {
+	word-wrap : break-word;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     <script type="text/javascript" src="http://localhost/BlogForLife/API/validateForm.js"></script>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+    	<link rel="icon" href="../../../../favicon.ico">
+    	<title>#blogforlife</title>
+    	<!-- Bootstrap core CSS -->
+    	<link href="http://localhost/BlogForLife/Styles/base_bootstrap.css" rel="stylesheet">
+			<!-- Custom styles for this template -->
+			<link href="http://localhost/BlogForLife/Styles/start_page_styles.css" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+			<link href="http://localhost/BlogForLife/Styles/sticky-footer-navbar.css" rel="stylesheet">
+      <link href="http://localhost/BlogForLife/Styles/form_styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class = "body-text">
+			<!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">#BlogForLife</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://localhost/BlogForLife/Pages/start_page.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" style="margin-right: 10px">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <form class="form-inline mt-2 mt-md-0" action = "http://localhost/BlogForLife/Pages/registration_form.html">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-right: 10px">Sign Up</button>
+          </form>
+          <form class="form-inline mt-2 mt-md-0" action = "http://localhost/BlogForLife/Pages/login.html">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+          </form>
+        </div>
+        </nav>
+        </header>
+			<br><br>
+      		<div class = "main-heading">
+      		<h1>Create a New Account</h1>
+    		</div>
+			<form name = 'regform' onsubmit="return validateForm();" method="POST">
+				<section name = "name-fields">
+				<p>Surname</p>
+				<input type = "text" id = "surname" style = "text-transform: capitalize;" required><br><br>
+				<p>First Name</p>
+				<input type = "text" id = "first_name" style = "text-transform: capitalize;" required><br><br>
+				<p>Middle Name</p>
+				<input type = "text" id = "middle_name" style = "text-transform: capitalize;" required><br><br>
+				</section>
+				<p>Gender</p>
+				<label style="margin-right: 20px"><input type="radio" id="male-female" value= "male"  checked required> Male</label>
+  		  		<label><input type="radio" id="male-female" value = "female">Female</label><br>
+  		  		<p>Date of Birth</p>
+	  		  	<input type = "number" id = "dob" min = "1" max="31" placeholder="day" required>
+	  		  	<input type = "number" id = "dob" min = "1" max="12" placeholder="month" required>
+	  		  	<input type = "number" id = "dob" min = "1950" max="2006" placeholder="year" required><br><br>
+	  		  	<p>Select an image to upload as a profile picture :</p>
+	  		  	<input type = "file" id = "profile_pic" accept = "image/*">
+	  		  	<br><br><p>Email address</p>
+	  		  	<input type = "text" id = "email_id" required><br><br>
+	  		  	<p>Mobile Number</p>
+	  		  	<input type = "text" id = "mobile_number" required><br><br>
+	  		  	<p>Password</p>
+            <details>Password must contain atleast one uppercase letter, one lowercase letter, one number and one special character.</details>
+	  		  	<input type = "Password" id = "psw" required><br><br>
+	  		  	<p>Confirm Password</p>
+	  		  	<input type = "Password" id = "psw_confirm" required><br><br>
+	  		  	<input type = "checkbox" id = "tc_agreement" required>I have read all the terms and conditions and agree to abide by them<br><br>
+	  		  	<input type = "submit" id = "submit-button" method = "POST">
+    		</form>
+    		<br>
+    		<footer><details>All submitted data is encrypted and stored securely by #blogforlife</details></footer>
+    </body>
+</html>
