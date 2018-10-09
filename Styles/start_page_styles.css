@@ -16,7 +16,7 @@
 
 body {
 	margin: 50px;
-	background-image: url(http://localhost/BlogForLife/styles/background_image.jpeg);
+	background-image: url(/Styles/background_image.jpeg);
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
